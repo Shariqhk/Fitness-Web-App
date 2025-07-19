@@ -20,7 +20,7 @@ const App = () => {
 
     const generatePlan = async () => {
         setLoading(true);
-        const res = await fetch("https://your-backend-url.com/generate-plan", {
+        const res = await fetch("https://shariqhk.pythonanywhere.com/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(inputs)
